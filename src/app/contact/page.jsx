@@ -7,7 +7,7 @@ import Preloader from '@/helper/Preloader';
 
 export const metadata = {
   title:
-    'Contact || Arlington Auto Service - Car Repair & Auto Services NEXT Js Template',
+    'Contact || Arlington Auto Service - Car Repair & Auto Services',
 };
 
 const page = () => {

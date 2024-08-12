@@ -9,7 +9,7 @@ import ClientAreaOne from '@/components/ClientAreaOne';
 
 export const metadata = {
   title:
-    'About || Arlington Auto Service - Car Repair & Auto Services NEXT Js Template',
+    'About || Arlington Auto Service - Car Repair & Auto Services',
 };
 
 const page = () => {
