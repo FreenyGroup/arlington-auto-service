@@ -174,13 +174,13 @@ const CounterOne = () => {
                       Requesting A Call:
                     </h6>
                     <h4 className="link">
-                      <a className="text-white" href="tel:6295550129">
-                        (629) 555-0129
+                      <a className="text-white" href="tel:5714059196">
+                        (571) 405-9196
                       </a>
                     </h4>
                     <h4 className="link pt-1">
-                      <a className="text-white" href="tel:6295550129">
-                        (629) 555-0129
+                      <a className="text-white" href="tel:5713382711">
+                        (571) 338-2711
                       </a>
                     </h4>
                   </div>
