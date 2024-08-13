@@ -536,7 +536,7 @@
       width: 11.5%;
       top: -50px;
       left: 0;
-      background: $theme-color;
+      background: $logo-background;
       border-radius: 0 0 5px 0;
     }
   }
@@ -638,7 +638,7 @@
   }
   .header-layout1 {
     .header-logo {
-      background: $theme-color;
+      background: $logo-background;
       padding: 25px;
       position: relative;
       &:after {
@@ -648,7 +648,7 @@
         height: calc(100% + 10px);
         top: 0;
         left: 0;
-        background: $theme-color;
+        background: $logo-background;
         border-radius: 0 0 5px 5px;
         z-index: -1;
       }

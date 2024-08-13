@@ -26,6 +26,7 @@
   --section-space-mobile: 80px;
   --section-title-space: 60px;
   --ripple-ani-duration: 5s;
+  --logo-background: #000001;
 }
 
 // Color Variation
@@ -45,6 +46,7 @@ $yellow-color: var(--yellow-color);
 $success-color: var(--success-color);
 $error-color: var(--error-color);
 $border-color: var(--border-color);
+$logo-background: var(--logo-background);
 
 // Font Variation
 $icon-font: var(--icon-font);
