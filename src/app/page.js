@@ -31,6 +31,7 @@ const page = () => {
       <CounterOne />
       {/* About Two */}
       <AboutTwo />
+      {/* Marquee One */}
       <ClientAreaOne />
       {/* Why Choose Us One */}
       <WhyChooseUsOne />

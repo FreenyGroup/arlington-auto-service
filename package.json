@@ -27,7 +27,7 @@
     "react-range": "^1.8.14",
     "react-scroll-to-top": "^3.0.0",
     "react-visibility-sensor": "^5.1.1",
-    "swiper": "^9.1.1"
+    "swiper": "^11.1.9"
   },
   "devDependencies": {
     "sass": "^1.71.1"

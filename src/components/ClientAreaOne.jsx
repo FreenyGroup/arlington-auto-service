@@ -1,7 +1,12 @@
 'use client';
 import Link from 'next/link';
 import React from 'react';
+// import Swiper core and required modules
+import { A11y, Autoplay } from 'swiper/modules';
 import { Swiper, SwiperSlide } from 'swiper/react';
+
+import 'swiper/scss';
+import 'swiper/scss/autoplay';
 
 const ClientAreaOne = () => {
   return (
@@ -15,11 +20,13 @@ const ClientAreaOne = () => {
         <div className="container">
           <div className="row global-carousel">
             <Swiper
+              autoplay={true}
+              loop={true}
+              modules={[Autoplay]}
               spaceBetween={20}
               slidesPerGroup={2}
-              speed={1000}
-              autoplay={{ delay: 6000 }}
               className="mySwiper"
+              speed={2000}
               breakpoints={{
                 0: {
                   slidesPerView: 2,
