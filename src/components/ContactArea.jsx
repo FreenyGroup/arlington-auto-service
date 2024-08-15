@@ -157,13 +157,34 @@ const ContactArea = () => {
                           <option value="Choose">
                             Choose a Option
                           </option>
-                          <option value="Construction">
-                            Auto Repair
+                          <option value="ac-repair">
+                            A/C Repair
                           </option>
-                          <option value="Real Estate">
-                            Car Repair
+                          <option value="auto-body-repair">
+                            Auto Body Repair
                           </option>
-                          <option value="Industry">Automotive</option>
+                          <option value="auto-body-painting">
+                            Auto Body Painting
+                          </option>
+                          <option value="brakes">Brakes</option>
+                          <option value="collision-repair">
+                            Collision Repair
+                          </option>
+                          <option value="diagnostics">
+                            Diagnostics
+                          </option>
+                          <option value="engine-repair">
+                            Engine Repair
+                          </option>
+                          <option value="oil-change">
+                            Oil Change
+                          </option>
+                          <option value="tune-ups">Tune Ups</option>
+                          <option value="tires">Tires</option>
+                          <option value="trasmission">
+                            Trasmission
+                          </option>
+                          <option value="other">Other</option>
                         </select>
                       </div>
                     </div>
@@ -174,10 +195,11 @@ const ContactArea = () => {
                       id="contactForm"
                       className="form-control"
                       defaultValue={''}
+                      name="message"
                     />
                   </div>
                   <div className="form-btn col-12">
-                    <button className="btn style2">
+                    <button className="btn style2" type="submit">
                       Submit <i className="fas fa-arrow-right ms-2" />
                     </button>
                   </div>

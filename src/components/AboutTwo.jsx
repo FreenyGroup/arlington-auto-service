@@ -3,7 +3,7 @@ import TrackVisibility from 'react-on-screen';
 import CountUp from 'react-countup';
 const AboutTwo = () => {
   return (
-    <div className="">
+    <div className="space-bottom">
       <div className="container">
         <div className="row">
           <div className="col-xxl-7 col-xl-6">

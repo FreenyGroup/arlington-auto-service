@@ -115,7 +115,7 @@ const AboutOne = () => {
               </div>
               <div className="btn-wrap mt-20">
                 <Link
-                  href="/about"
+                  href="/contact"
                   className="btn style2 mt-xl-0 mt-20"
                 >
                   Contact Us <i className="fas fa-arrow-right ms-2" />

@@ -189,8 +189,9 @@ const ClientAreaOne = () => {
                   </h2>
                 </div>
                 <form
-                  action="mail.php"
+                  name="contact"
                   method="POST"
+                  data-netlify="true"
                   className="appointment-form ajax-contact"
                 >
                   <div className="row">
@@ -230,7 +231,7 @@ const ClientAreaOne = () => {
                     <div className="col-md-6">
                       <div className="form-group">
                         <select
-                          name="subject"
+                          name="subject[]"
                           id="subject"
                           className="form-select style-border2"
                           defaultValue={'Choose'}
@@ -238,13 +239,34 @@ const ClientAreaOne = () => {
                           <option value="Choose">
                             Choose a Option
                           </option>
-                          <option value="Construction">
-                            Auto Repair
+                          <option value="ac-repair">
+                            A/C Repair
                           </option>
-                          <option value="Real Estate">
-                            Car Repair
+                          <option value="auto-body-repair">
+                            Auto Body Repair
                           </option>
-                          <option value="Industry">Automotive</option>
+                          <option value="auto-body-painting">
+                            Auto Body Painting
+                          </option>
+                          <option value="brakes">Brakes</option>
+                          <option value="collision-repair">
+                            Collision Repair
+                          </option>
+                          <option value="diagnostics">
+                            Diagnostics
+                          </option>
+                          <option value="engine-repair">
+                            Engine Repair
+                          </option>
+                          <option value="oil-change">
+                            Oil Change
+                          </option>
+                          <option value="tune-ups">Tune Ups</option>
+                          <option value="tires">Tires</option>
+                          <option value="trasmission">
+                            Trasmission
+                          </option>
+                          <option value="other">Other</option>
                         </select>
                         <i className="fas fa-angle-down text-white" />
                       </div>
@@ -256,10 +278,11 @@ const ClientAreaOne = () => {
                       id="contactForm"
                       className="form-control style-border2"
                       defaultValue={''}
+                      name="message"
                     />
                   </div>
                   <div className="form-btn col-12">
-                    <button className="btn style3">
+                    <button className="btn style3" type="submit">
                       Submit Request{' '}
                       <i className="fas fa-arrow-right ms-2" />
                     </button>

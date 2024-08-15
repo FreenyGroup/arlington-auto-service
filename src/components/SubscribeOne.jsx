@@ -4,7 +4,7 @@ const SubscribeOne = () => {
   return (
     <div className="container">
       <div
-        className="footer-top-1 bg-theme"
+        className="footer-top-1 bg-logo"
         style={{
           backgroundImage: 'url(assets/img/bg/footer-top-bg1-1.png)',
         }}

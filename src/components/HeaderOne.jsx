@@ -165,6 +165,9 @@ const HeaderOne = () => {
                         </ul>
                       </li>
                       <li>
+                        <Link href="/gallery">Gallery</Link>
+                      </li>
+                      <li>
                         <Link href="/contact">Contact</Link>
                       </li>
                     </ul>
@@ -272,6 +275,9 @@ const HeaderOne = () => {
                       <Link href="/transmissions">Transmissions</Link>
                     </li>
                   </ul>
+                </li>
+                <li>
+                  <Link href="/gallery">Gallery</Link>
                 </li>
                 <li>
                   <Link href="/contact">Contact</Link>
