@@ -69,7 +69,7 @@ const HeaderOne = () => {
                     </li>
                     <li>
                       <i className="fas fa-map-marker-alt" />
-                      3800 S Four Mile Run Dr Bay D2, Arlington VA
+                      3800 S Four Mile Run Dr Bay D, Arlington VA
                       22206
                     </li>
                     <li>

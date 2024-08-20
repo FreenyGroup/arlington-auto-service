@@ -13,7 +13,7 @@ const ContactArea = () => {
                 </div>
                 <h6 className="contact-info_title">Address</h6>
                 <p className="contact-info_text">
-                  3800 S Four Mile Run Dr Bay D2
+                  3800 S Four Mile Run Dr Bay D
                 </p>
                 <p className="contact-info_text">
                   Arlington VA 22206

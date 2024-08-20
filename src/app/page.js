@@ -1,6 +1,7 @@
 import AboutTwo from '@/components/AboutTwo';
 import ClientAreaOne from '@/components/ClientAreaOne';
 import CounterOne from '@/components/CounterOne';
+import CTAAreaTwo from '@/components/CTAAreaTwo';
 import FaqAreaOne from '@/components/FaqAreaOne';
 import FooterAreaOne from '@/components/FooterAreaOne';
 import HeaderOne from '@/components/HeaderOne';
@@ -35,6 +36,8 @@ const page = () => {
       <ClientAreaOne />
       {/* Why Choose Us One */}
       <WhyChooseUsOne />
+      {/* CTA Area Two */}
+      <CTAAreaTwo />
       {/* Process Area One */}
       <ProcessAreaOne />
       {/* Faq Area One */}

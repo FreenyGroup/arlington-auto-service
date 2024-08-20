@@ -100,7 +100,7 @@ const FooterAreaOne = () => {
                     </Link>
                   </p>
                   <p>
-                    3800 S four mile dr bay D2 <br /> Arlington, VA
+                    3800 S four mile dr Bay D <br /> Arlington, VA
                     22206
                   </p>
                 </div>
