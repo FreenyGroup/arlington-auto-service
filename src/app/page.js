@@ -30,14 +30,15 @@ const page = () => {
       <HeroOne />
       {/* Counter One */}
       <CounterOne />
+      {/* CTA Area Two */}
+      <CTAAreaTwo />
       {/* About Two */}
       <AboutTwo />
       {/* Marquee One */}
       <ClientAreaOne />
       {/* Why Choose Us One */}
       <WhyChooseUsOne />
-      {/* CTA Area Two */}
-      <CTAAreaTwo />
+
       {/* Process Area One */}
       <ProcessAreaOne />
       {/* Faq Area One */}

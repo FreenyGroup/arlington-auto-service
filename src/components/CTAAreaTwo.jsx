@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const CTAAreaTwo = () => {
   return (
     <div className="cta-area-2">
@@ -16,6 +18,12 @@ const CTAAreaTwo = () => {
                   save on out-of-pocket costs-drive away with
                   confidence!
                 </p>
+                <div className="btn-wrap mt-30">
+                  <Link className="btn style3" href="/contact">
+                    Schedule Your Service{' '}
+                    <i className="fas fa-arrow-right ms-2" />
+                  </Link>
+                </div>
               </div>
             </div>
             <div className="col-lg-5">
