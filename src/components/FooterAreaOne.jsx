@@ -92,7 +92,7 @@ const FooterAreaOne = () => {
                     <Link href="tel:5714059196">(571) 405 9196</Link>
                   </p>
                   <p>
-                    <Link href="tel:5713382711">(571) 338 2711</Link>
+                    <Link href="tel:5713886755">(571) 388 6755</Link>
                   </p>
                   <p>
                     <Link href="mailto:contact@arlington-autoservice.com">

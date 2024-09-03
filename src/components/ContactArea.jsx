@@ -30,7 +30,7 @@ const ContactArea = () => {
                   <a href="tel:5714059196">(571) 405-9196</a>
                 </p>
                 <p className="contact-info_text">
-                  <a href="tel:5713382711">(571) 338-2711</a>
+                  <a href="tel:5713886755">(571) 388-6755</a>
                 </p>
               </div>
             </div>
