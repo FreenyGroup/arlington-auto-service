@@ -11,6 +11,19 @@ const HeroOne = () => {
     >
       <div className="container">
         <div className="row flex-row-reverse">
+          <div className="pricing-card style2">
+            <div className="pricing-card-icon-wrap">
+              <div className="pricing-card_icon">
+                <img
+                  src="assets/img/icon/picing-icon_2-1.svg"
+                  alt="Fixturbo"
+                />
+              </div>
+              <h4 className="pricing-card_title">
+                Now Offering Financing!
+              </h4>
+            </div>
+          </div>
           <div className="col-xl-6">
             <div className="hero-style1">
               <span className="sub-title text-white">

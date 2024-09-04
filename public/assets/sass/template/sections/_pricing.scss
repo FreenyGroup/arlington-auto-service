@@ -13,9 +13,11 @@
 }
 .pricing-card {
     border-radius: 5px;
+    /*
     background: $white-color;
+    */
     box-shadow: 0px 0px 60px 0px rgba(0, 0, 0, 0.05);
-    padding: 60px;
+    padding: 0 0 0 0;
     position: relative;
     z-index: 0;
     display: flex;
@@ -115,12 +117,15 @@
 .pricing-card.style2 {
     display: block;
     padding: 0;
+    /*
     background: $smoke-color;
+    */
     box-shadow: none;
     transition: 0.4s;
+    padding: 0px 10px 20px 10px;
     .pricing-card-icon-wrap {
         display: flex;
-        padding: 45px 0px 25px 35px;
+        padding: 0px 0px 20px 0px;
         align-items: center;
         justify-content: space-between;
         position: relative;
@@ -147,7 +152,7 @@
     }
     .pricing-card_title {
         margin-bottom: 0;
-        font-size: 20px;
+        font-size: 22.5px;
         font-weight: 700;
         background: $theme-color;
         border-radius: 5px 0 0 5px;
@@ -185,7 +190,7 @@
     &:hover {
         background: #FBD7DD;
     }
-} 
+}
 @include lg {
     .pricing-card.style2 .pricing-card-icon-wrap {
         gap: 40px;
