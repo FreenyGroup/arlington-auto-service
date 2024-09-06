@@ -162,6 +162,11 @@ const HeaderOne = () => {
                               Transmissions
                             </Link>
                           </li>
+                          <li>
+                            <Link href="/exhaust-muffler-welding">
+                              Exhaust Muffler Welding
+                            </Link>
+                          </li>
                         </ul>
                       </li>
                       <li>
@@ -273,6 +278,11 @@ const HeaderOne = () => {
                     </li>
                     <li>
                       <Link href="/transmissions">Transmissions</Link>
+                    </li>
+                    <li>
+                      <Link href="/exhaust-muffler-welding">
+                        Exhaust Muffler Welding
+                      </Link>
                     </li>
                   </ul>
                 </li>

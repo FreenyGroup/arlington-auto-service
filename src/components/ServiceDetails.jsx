@@ -121,6 +121,12 @@ const ServiceDetails = ({
                       A/C Repair
                     </Link>
                   </li>
+                  <li>
+                    <Link href="/exhaust-muffler-welding">
+                      <i className="fas fa-angle-double-right" />
+                      Exhaust Muffler Welding
+                    </Link>
+                  </li>
                 </ul>
               </div>
               <div className="widget widget_contact">
