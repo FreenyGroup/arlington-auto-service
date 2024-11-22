@@ -94,7 +94,7 @@ const FooterAreaOne = () => {
                 <h3 className="widget_title">Contact</h3>
                 <div className="widget-contact">
                   <p>
-                    <Link href="tel:5714059196">(571) 405 9196</Link>
+                    <Link href="tel:5714317481">(571) 431 7481</Link>
                   </p>
                   <p>
                     <Link href="tel:5713886755">(571) 388 6755</Link>
