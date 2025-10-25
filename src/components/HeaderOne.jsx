@@ -69,12 +69,12 @@ const HeaderOne = () => {
                     </li>
                     <li>
                       <i className="fas fa-map-marker-alt" />
-                      3800 S Four Mile Run Dr Bay D, Arlington VA
-                      22206
+                      3800 South Four Mile Run Dr. Unit D, Arlington
+                      VA 22206
                     </li>
                     <li>
                       <i className="fas fa-clock" />
-                      Monday - Saturday
+                      Monday - Saturday 9am - 5pm
                     </li>
                   </ul>
                 </div>

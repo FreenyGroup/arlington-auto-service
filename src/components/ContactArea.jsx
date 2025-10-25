@@ -13,7 +13,7 @@ const ContactArea = () => {
                 </div>
                 <h6 className="contact-info_title">Address</h6>
                 <p className="contact-info_text">
-                  3800 S Four Mile Run Dr Bay D
+                  3800 South Four Mile Run Dr. Unit D
                 </p>
                 <p className="contact-info_text">
                   Arlington VA 22206
@@ -40,10 +40,8 @@ const ContactArea = () => {
                   <i className="fas fa-clock" />
                 </div>
                 <h6 className="contact-info_title">Opening</h6>
-                <p className="contact-info_text">
-                  Mon-Fri 7AM To 5PM
-                </p>
-                <p className="contact-info_text">Sat 7AM To 1PM</p>
+                <p className="contact-info_text">Mon-Sat</p>
+                <p className="contact-info_text">9AM To 5PM</p>
               </div>
             </div>
             <div className="col-xxl-3 col-lg-4 col-md-6">
