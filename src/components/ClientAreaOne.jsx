@@ -236,6 +236,7 @@ const ClientAreaOne = () => {
                           name="name"
                           id="name"
                           placeholder="Your Name"
+                          required
                         />
                       </div>
                     </div>
@@ -247,6 +248,19 @@ const ClientAreaOne = () => {
                           name="email"
                           id="email"
                           placeholder="Email Address"
+                          required
+                        />
+                      </div>
+                    </div>
+                    <div className="col-md-6">
+                      <div className="form-group">
+                        <input
+                          type="tel"
+                          className="form-control style-border2"
+                          name="number"
+                          id="number"
+                          placeholder="Phone Number"
+                          required
                         />
                       </div>
                     </div>
@@ -267,9 +281,10 @@ const ClientAreaOne = () => {
                           name="subject"
                           id="subject"
                           className="form-select style-border2"
-                          defaultValue={'Choose'}
+                          defaultValue=""
+                          required
                         >
-                          <option value="Choose">
+                          <option value="" disabled>
                             Choose a Option
                           </option>
                           <option value="ac-repair">

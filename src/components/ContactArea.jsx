@@ -1,6 +1,36 @@
 import React from 'react';
 
+const encode = (data) =>
+  Object.keys(data)
+    .map((k) => encodeURIComponent(k) + '=' + encodeURIComponent(data[k]))
+    .join('&');
+
 const ContactArea = () => {
+  const [status, setStatus] = useState('');
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const form = e.target;
+    const data = Object.fromEntries(new FormData(form));
+
+    if (!data.name?.trim() || !data.email?.trim() || !data.number?.trim()) {
+      setStatus('invalid');
+      return;
+    }
+
+    try {
+      const res = await fetch('/__forms.html', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: encode({ 'form-name': 'contact', ...data }),
+      });
+      if (!res.ok) throw new Error('Submit failed');
+      setStatus('success');
+      form.reset();
+    } catch {
+      setStatus('error');
+    }
+  };
   return (
     <>
       <div className="contact-area space">
@@ -106,42 +136,55 @@ const ContactArea = () => {
                   </h2>
                 </div>
                 <form
-                  action="mail.php"
+                  name="contact"
                   method="POST"
-                  className="appointment-form ajax-contact"
+                  data-netlify="true"
+                  data-netlify-honeypot="bot-field"
+                  onSubmit={handleSubmit}
+                  onChange={() => setStatus('')}
+                  className="appointment-form"
                 >
+                  <input type="hidden" name="form-name" value="contact" />
+                  <p hidden>
+                    <label>
+                      Don't fill this out: <input name="bot-field" />
+                    </label>
+                  </p>
                   <div className="row">
                     <div className="col-md-6">
                       <div className="form-group">
                         <input
-                          type="text"
-                          className="form-control"
-                          name="name"
-                          id="name"
-                          placeholder="Your Name"
-                        />
+                        type="text"
+                        className="form-control"
+                        name="name"
+                        id="name"
+                        placeholder="Your Name"
+                        required
+                      />
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="form-group">
                         <input
-                          type="text"
-                          className="form-control"
-                          name="email"
-                          id="email"
-                          placeholder="Email Address"
-                        />
+                        type="email"
+                        className="form-control"
+                        name="email"
+                        id="email"
+                        placeholder="Email Address"
+                        required
+                      />
                       </div>
                     </div>
                     <div className="col-md-6">
                       <div className="form-group">
                         <input
-                          type="text"
-                          className="form-control"
-                          name="number"
-                          id="number"
-                          placeholder="Phone Number"
-                        />
+                        type="tel"
+                        className="form-control"
+                        name="number"
+                        id="number"
+                        placeholder="Phone Number"
+                        required
+                      />
                       </div>
                     </div>
                     <div className="col-md-6">
@@ -150,9 +193,10 @@ const ContactArea = () => {
                           name="subject"
                           id="subject"
                           className="form-select"
-                          defaultValue={'Choose'}
+                          defaultValue=""
+                          required
                         >
-                          <option value="Choose">
+                          <option value="" disabled>
                             Choose a Option
                           </option>
                           <option value="ac-repair">
@@ -201,6 +245,9 @@ const ContactArea = () => {
                       Submit <i className="fas fa-arrow-right ms-2" />
                     </button>
                   </div>
+                  {status === 'success' && <p className="mt-3">Thanks! We'll be in touch soon.</p>}
+                  {status === 'error' && <p className="mt-3">Something went wrong. Please try again.</p>}
+                  {status === 'invalid' && <p className="mt-3">Please fill out all required fields.</p>}
                 </form>
               </div>
             </div>
